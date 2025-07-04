@@ -27,6 +27,7 @@ This project is an RPA bot built using UiPath to automate ID card generation for
 
 
 ## Result Screenshot
+
     ![Generated ID Card Screenshot](https://github.com/Tej-79/Bot-for-ID_cards/blob/main/Data_and_Results/Screenshot.png?raw=true)
 
 
