@@ -1,0 +1,67 @@
+﻿{
+  "Metadata": {
+    "Id": "b55d02fa-2c3b-42ca-894d-ff75e9433ae4",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "First",
+    "Theme": "Flatly",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ".change{\r\nwidth:200px;\r\n}"
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "HTML",
+        "tag": "myimage",
+        "attrs": [
+          {
+            "attr": "",
+            "value": ""
+          }
+        ],
+        "content": "<img id=\"myimage\" \nsrc=\"data\\gitbanner.png\"\nwidth=100% height='200'>",
+        "refreshOnChange": false,
+        "key": "html",
+        "type": "htmlelement",
+        "input": false,
+        "tableView": false
+      },
+      {
+        "html": "<h3>BOT TO &nbsp;GENERATE IDENTITY CARDS</h3>",
+        "label": "Content",
+        "refreshOnChange": false,
+        "key": "content",
+        "type": "content",
+        "input": false,
+        "tableView": false
+      },
+      {
+        "label": "Services",
+        "widget": "html5",
+        "placeholder": "Choose",
+        "customClass": "change",
+        "tableView": true,
+        "data": {
+          "values": [
+            {
+              "label": "PrintAll",
+              "value": "printAll"
+            },
+            {
+              "label": "SinglePrint",
+              "value": "singlePrint"
+            }
+          ]
+        },
+        "validate": {
+          "onlyAvailableItems": true
+        },
+        "key": "select",
+        "type": "select",
+        "input": true
+      }
+    ]
+  }
+}

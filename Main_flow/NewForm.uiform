@@ -1,0 +1,231 @@
+﻿{
+  "Metadata": {
+    "Id": "d8b7323d-6e8d-4c87-8ab2-30d74fa16441",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "DATA",
+    "Theme": "Sandstone",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ".change {\r\nbackground-color:#808080;\r\nfont-size:10px;\r\n box-shadow: 10px 8px 1px rgba(1, 0, 0, 0.2);\r\nfont-weight: bold;\r\nwidth:70px;\r\nborder-radius:5px;\r\non-click:Black;\r\nborder:none\r\n}\r\n.spring {\r\nbackground-color:#696969;\r\nborder:none;\r\nwidth:60%;\r\nfont-size:bold;\r\nfont-position:5px 0px 0px 0px \r\n}\r\n.change:hover {\r\n        background-color: #000000; /* New color when hovered */\r\n    }"
+  },
+  "Data": {
+    "components": [
+      {
+        "title": "DATA",
+        "collapsible": false,
+        "key": "data",
+        "customConditional": "window.close();",
+        "type": "panel",
+        "label": "Panel",
+        "input": false,
+        "tableView": false,
+        "components": [
+          {
+            "components": [
+              {
+                "label": "SEARCH FOR DATA",
+                "key": "tab1",
+                "components": [
+                  {
+                    "label": "UID",
+                    "tableView": false,
+                    "delimiter": false,
+                    "requireDecimal": false,
+                    "truncateMultipleSpaces": false,
+                    "validate": {
+                      "required": true
+                    },
+                    "key": "uid1",
+                    "type": "number",
+                    "input": true
+                  },
+                  {
+                    "label": "Search",
+                    "action": "event",
+                    "showValidations": true,
+                    "customClass": "change",
+                    "tableView": false,
+                    "key": "search1",
+                    "type": "button",
+                    "input": true
+                  },
+                  {
+                    "label": "Print",
+                    "action": "event",
+                    "showValidations": false,
+                    "customClass": "change",
+                    "tableView": false,
+                    "key": "print",
+                    "type": "button",
+                    "input": true
+                  },
+                  {
+                    "label": "Back",
+                    "action": "event",
+                    "showValidations": false,
+                    "customClass": "change",
+                    "tableView": false,
+                    "key": "back",
+                    "type": "button",
+                    "input": true
+                  }
+                ]
+              },
+              {
+                "label": "INSERT INTO DATABASE",
+                "key": "insert",
+                "components": [
+                  {
+                    "label": "NAME",
+                    "tableView": true,
+                    "validate": {
+                      "required": true
+                    },
+                    "key": "name",
+                    "type": "textfield",
+                    "input": true
+                  },
+                  {
+                    "label": "DEPARTMENT",
+                    "tableView": true,
+                    "validate": {
+                      "required": true
+                    },
+                    "key": "department",
+                    "type": "textfield",
+                    "input": true
+                  },
+                  {
+                    "label": "DESIGNATION",
+                    "tableView": true,
+                    "validate": {
+                      "required": true
+                    },
+                    "key": "designation",
+                    "type": "textfield",
+                    "input": true
+                  },
+                  {
+                    "label": "UID",
+                    "tableView": false,
+                    "delimiter": false,
+                    "requireDecimal": false,
+                    "truncateMultipleSpaces": false,
+                    "validate": {
+                      "required": true
+                    },
+                    "key": "uid2",
+                    "type": "number",
+                    "input": true
+                  },
+                  {
+                    "label": "BLOODGROUP",
+                    "tableView": true,
+                    "validate": {
+                      "required": true
+                    },
+                    "key": "bloodgroup",
+                    "type": "textfield",
+                    "input": true
+                  },
+                  {
+                    "label": "EMAIL",
+                    "tableView": true,
+                    "validate": {
+                      "required": true
+                    },
+                    "key": "email1",
+                    "type": "email",
+                    "input": true
+                  },
+                  {
+                    "label": "Submit",
+                    "action": "event",
+                    "showValidations": false,
+                    "customClass": "change",
+                    "tableView": false,
+                    "key": "submit",
+                    "type": "button",
+                    "input": true
+                  }
+                ]
+              },
+              {
+                "label": "UPDATE OLD DATA",
+                "key": "update2",
+                "components": [
+                  {
+                    "label": "EMPLOYE ID",
+                    "disabled": true,
+                    "tableView": true,
+                    "delimiter": false,
+                    "requireDecimal": false,
+                    "truncateMultipleSpaces": false,
+                    "validate": {
+                      "required": true
+                    },
+                    "key": "employeId",
+                    "type": "number",
+                    "input": true
+                  },
+                  {
+                    "label": "NAME",
+                    "tableView": true,
+                    "key": "upname",
+                    "type": "textfield",
+                    "input": true
+                  },
+                  {
+                    "label": "DEPARTMENT",
+                    "tableView": true,
+                    "key": "updepartment",
+                    "type": "textfield",
+                    "input": true
+                  },
+                  {
+                    "label": "DESIGNATION",
+                    "tableView": true,
+                    "key": "updesignation",
+                    "type": "textfield",
+                    "input": true
+                  },
+                  {
+                    "label": "BLOOD GROUP",
+                    "tableView": true,
+                    "key": "upbloodGroup",
+                    "type": "textfield",
+                    "input": true
+                  },
+                  {
+                    "label": "EMAIL",
+                    "tableView": true,
+                    "key": "upemail",
+                    "type": "email",
+                    "input": true
+                  },
+                  {
+                    "label": "UPDATE",
+                    "action": "event",
+                    "showValidations": false,
+                    "customClass": "change",
+                    "tableView": false,
+                    "key": "update5285",
+                    "type": "button",
+                    "input": true
+                  }
+                ]
+              }
+            ],
+            "key": "tabs",
+            "type": "tabs",
+            "input": false,
+            "tableView": false,
+            "label": "Tabs"
+          }
+        ]
+      }
+    ]
+  }
+}
